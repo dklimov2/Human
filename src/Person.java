@@ -4,6 +4,17 @@ public class Person {
 	protected int age = 0;
 	protected String address = "n/a";
 
+	public Person() {
+	}
+
+	public Person(String name, int age) {
+		System.out.println("New persons name: " + name);
+		System.out.println("New persons age: " + age);
+		this.name = name;
+		this.age = age;
+
+	}
+
 	public void setName(String n) {
 		this.name = n;
 	}
@@ -35,4 +46,7 @@ public class Person {
 		System.out.println("My address is " + address);
 	}
 
+	public static void testStatic() {
+		System.out.println("Test static method");
+	}
 }
